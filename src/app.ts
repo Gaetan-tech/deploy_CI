@@ -1,13 +1,21 @@
 // npm i http
-import http from "http";
+import http from 'http';
 import fs from "fs";
 import { displayUserName } from "./lib/index";
 import { User } from "./interfaces/index";
 
+<<<<<<< HEAD
 const user: User = {
   firstName: "John",
   lastName: "Doe",
 };
+=======
+const user:User = {
+    firstName: "John",
+    lastName: "Doe",
+    
+}
+>>>>>>> f4f2961d3b54944ce0114cd90a7a8fe2ebccef5a
 
 const server = http.createServer((req, res) => {
   if (req.url === "/") {
